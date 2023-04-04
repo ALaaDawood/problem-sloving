@@ -39,4 +39,22 @@ describe('Arrays problems test', function () {
         let result = Arrays.shuffleArray(input, 2);
         expect(result).deep.equal(expected);
     });
+    it('Final Value of Variable After Performing Operations', function () {
+        const operations = ["--X", "X++", "X++"];
+        const expected = 1;
+        let result = Arrays.finalValueAfterOperations(operations);
+        expect(result).deep.equal(expected);
+    });
+    it('Running Sum of 1d Array1', function () {
+        const input = [1, 2, 3, 4];
+        const expected = [1, 3, 6, 10];
+        let result = Arrays.runningSum(input);
+        expect(result).deep.equal(expected);
+    });
+    it('Running Sum of 1d Array2', function () {
+        const input = [1, 1, 1, 1, 1];
+        const expected = [1, 2, 3, 4, 5];
+        let result = Arrays.runningSum(input);
+        expect(result).deep.equal(expected);
+    });    
 });
